@@ -2,7 +2,7 @@
 
 A B2B dashboard that acts as the UI layer for an n8n automation pipeline. This app simulates **Workflow 1 (HubSpot Lead Enrichment Pipeline)** by walking an inbound lead through normalization, company enrichment, AI scoring, and CRM write steps.
 
-**Live Demo:** [Insert your Lovable URL here]
+**Live Demo:** [Insert your Lovable URL here](https://lead-enrichment-pipeline.lovable.app)
 
 ## n8n Workflow Reference
 
