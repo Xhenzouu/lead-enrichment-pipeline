@@ -44,19 +44,6 @@ This app visualizes that flow: submit a lead and watch each stage execute in ord
 - **Collapsible Sidebar:** Navigation between Pipeline and Settings that collapses to save space.
 - **Premium UI:** Flat design with clean typography and no gradients.
 
-## Tech Stack
-
-<div align="center">
-
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
-
-</div>
-
-- **Frontend:** React, TypeScript, Tailwind CSS
-- **Hosting and build:** Lovable
-
 ## Run Locally
 
 1. Clone the repo:
