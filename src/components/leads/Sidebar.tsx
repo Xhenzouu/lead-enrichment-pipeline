@@ -22,7 +22,7 @@ export function Sidebar({ active, onChange }: { active: string; onChange: (v: st
         <div className="grid h-8 w-8 shrink-0 place-items-center rounded-md bg-primary font-serif text-base font-bold text-primary-foreground">
           L
         </div>
-        <span className={`font-serif text-lg ${fade}`}>LeadCommand</span>
+        <span className={`font-serif text-lg ${fade} ${collapsed ? "absolute" : ""}`}>LeadCommand</span>
         <button
           onClick={() => setCollapsed(!collapsed)}
           aria-label={toggleLabel}
@@ -33,7 +33,7 @@ export function Sidebar({ active, onChange }: { active: string; onChange: (v: st
         >
           {collapsed ? <ChevronsRight className="h-4 w-4" /> : <ChevronsLeft className="h-4 w-4" />}
         </button>
-        {collapsed && <div className="mb-3 h-px w-10 bg-border/60" />}
+        {collapsed && <div className="mb-3 h-px w-10 bg-border" />}
       </div>
       <nav className={`flex flex-col gap-1 ${collapsed ? "-mt-6 items-center px-2" : "px-3"}`}>
         {items.map((i) => (
