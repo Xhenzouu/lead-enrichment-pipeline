@@ -33,7 +33,7 @@ export function Sidebar({ active, onChange }: { active: string; onChange: (v: st
         >
           {collapsed ? <ChevronsRight className="h-4 w-4" /> : <ChevronsLeft className="h-4 w-4" />}
         </button>
-        {collapsed && <div className="my-3 h-px w-10 bg-border/60" />}
+        {collapsed && <div className="mb-3 h-px w-10 bg-border/60" />}
       </div>
       <nav className={`flex flex-col gap-1 ${collapsed ? "-mt-6 items-center px-2" : "px-3"}`}>
         {items.map((i) => (
