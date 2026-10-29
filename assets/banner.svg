@@ -1,0 +1,32 @@
+<svg width="1200" height="320" viewBox="0 0 1200 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Lead Enrichment Pipeline banner">
+  <rect width="1200" height="320" fill="#1a1918"/>
+  <rect x="0" y="0" width="1200" height="4" fill="#22d3ee"/>
+
+  <text x="64" y="118" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="700" fill="#f5f3ef">Lead Enrichment Pipeline</text>
+  <text x="64" y="160" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="20" fill="#a8a29e">A simulation of an n8n HubSpot lead enrichment workflow</text>
+
+  <!-- connector line -->
+  <line x1="120" y1="246" x2="1080" y2="246" stroke="#3a3836" stroke-width="2"/>
+
+  <!-- pipeline nodes -->
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="600" text-anchor="middle">
+    <rect x="64" y="222" width="150" height="48" rx="8" fill="#262422" stroke="#22d3ee" stroke-width="1.5"/>
+    <text x="139" y="252" fill="#f5f3ef">Normalize</text>
+
+    <rect x="344" y="222" width="150" height="48" rx="8" fill="#262422" stroke="#22d3ee" stroke-width="1.5"/>
+    <text x="419" y="252" fill="#f5f3ef">Apify</text>
+
+    <rect x="624" y="222" width="150" height="48" rx="8" fill="#262422" stroke="#22d3ee" stroke-width="1.5"/>
+    <text x="699" y="252" fill="#f5f3ef">Groq</text>
+
+    <rect x="904" y="222" width="150" height="48" rx="8" fill="#22d3ee"/>
+    <text x="979" y="252" fill="#1a1918">HubSpot</text>
+  </g>
+
+  <!-- arrows -->
+  <g fill="#22d3ee">
+    <polygon points="268,246 252,238 252,254"/>
+    <polygon points="548,246 532,238 532,254"/>
+    <polygon points="828,246 812,238 812,254"/>
+  </g>
+</svg>
