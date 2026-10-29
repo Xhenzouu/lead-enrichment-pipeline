@@ -14,7 +14,7 @@ export interface Lead {
   techStack: string[];
   criteria_met: string[];
   reasoning: string;
-  hubspotId?: string;
+  hubspotId?: string | undefined;
 }
 
 export const initialLeads: Lead[] = [
@@ -70,7 +70,7 @@ export function normalizeDomain(input: string): string {
     .toLowerCase()
     .replace(/^https?:\/\//, "")
     .replace(/^www\./, "")
-    .split("/")[0];
+    .split("/")[0] ?? "";
 }
 
 function hash(s: string) {
@@ -79,7 +79,7 @@ function hash(s: string) {
   return h;
 }
 
-const stacks = [
+const stacks: string[][] = [
   ["Shopify", "React"],
   ["WordPress", "HubSpot"],
   ["Next.js", "Stripe", "Segment"],
@@ -111,7 +111,7 @@ export function generateMockProcess(domain: string, message: string) {
     description: free
       ? "Free email provider; no company data available."
       : `${company} is a ${["B2B SaaS", "e-commerce", "logistics", "professional services"][h % 4]} company with roughly ${20 + (h % 480)} employees.`,
-    techStack: free ? [] : stacks[h % stacks.length],
+    techStack: free ? [] : (stacks[h % stacks.length] ?? []),
     score,
     criteria_met: criteria,
     reasoning,

@@ -28,7 +28,7 @@ export function ExecutionTimeline({
       onDone();
       return;
     }
-    const t = setTimeout(() => setDone((d) => d + 1), steps[done].ms);
+    const t = setTimeout(() => setDone((d) => d + 1), steps[done]?.ms ?? 1000);
     return () => clearTimeout(t);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [done]);
